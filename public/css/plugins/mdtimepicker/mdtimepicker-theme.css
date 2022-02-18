@@ -1,0 +1,8 @@
+.mdtp__wrapper[data-theme='orange'] .mdtp__time_holder { background-color: #F3911F; }
+.mdtp__wrapper[data-theme='orange'] .mdtp__clock .mdtp__am.active,
+.mdtp__wrapper[data-theme='orange'] .mdtp__clock .mdtp__pm.active { background-color: #F3911F; }
+.mdtp__wrapper[data-theme='orange'] .mdtp__clock .mdtp__clock_dot { background-color: #F3911F; }
+.mdtp__wrapper[data-theme='orange'] .mdtp__digit.active span,
+.mdtp__wrapper[data-theme='orange'] .mdtp__clock .mdtp__digit span:hover { background-color: #F3911F !important; }
+.mdtp__wrapper[data-theme='orange'] .mdtp__digit.active:before { background-color: #F3911F; }
+.mdtp__wrapper[data-theme='orange'] .mdtp__button { color: #F3911F; }

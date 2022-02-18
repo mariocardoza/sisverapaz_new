@@ -1,10 +1,10 @@
 <?php
 
 return [
-  'admin' => 'Inicio',
-  'posts' => 'Blog',
-  'teams' => 'Equipo',
-  'exports' => 'Exportes',
+  'home' => 'Inicio',
+  'empleados' => 'Blog',
+  'proveedores' => 'Proveedores',
+  'requisiciones' => 'Requisiciones',
   'users' => 'Usuarios',
   'entry-channels' => 'Vías de ingreso',
   'entry_channels' => 'Vías de ingreso',

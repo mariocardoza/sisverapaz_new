@@ -1,10 +1,33 @@
-<li class="treeview {{Route::currentRouteName() == 'paacs.index' ? 'active': (Route::currentRouteName()== 'paacs.show' ? 'active':null)}}">
+<!--li class="treeview {{Route::currentRouteName() == 'paacs.index' ? 'active': (Route::currentRouteName()== 'paacs.show' ? 'active':null)}}">
     <a href="{{ url('paacs')}}">
         <i class="fa fa-line-chart"></i> <span>Plan Anual de Compras</span>
     </a>
     
+</li-->
+<li class="c-sidebar-nav-item">
+    <a href="{{ route('home') }}" class="c-sidebar-nav-link">
+      <img src="/images/dashboard.png" class="c-sidebar-nav-icon">
+      Dashboard
+    </a>
 </li>
-
+<li class="c-sidebar-nav-item">
+    <a href="{{ url('requisiciones') }}" class="c-sidebar-nav-link">
+      <img src="/images/dashboard.png" class="c-sidebar-nav-icon">
+      Requisiciones
+    </a>
+</li>
+<li class="c-sidebar-nav-item">
+    <a href="{{ url('ordencompras') }}" class="c-sidebar-nav-link">
+      <img src="/images/dashboard.png" class="c-sidebar-nav-icon">
+      Orden de compras
+    </a>
+</li>
+<li class="c-sidebar-nav-item">
+    <a href="{{ url('proveedores') }}" class="c-sidebar-nav-link">
+      <img src="/images/dashboard.png" class="c-sidebar-nav-icon">
+      Proveedores
+    </a>
+</li>
 <!--li class="treeview {{Route::currentRouteName() == 'proyectos.index' ? 'active':(Route::currentRouteName()== 'proyectos.show' ? 'active':null)}}">
     <a href="{{ url('proyectos')}}">
         <i class="fa fa-industry"></i> <span>Proyectos</span>
@@ -16,7 +39,7 @@
         <i class="fa fa-pie-chart"></i>
         <span>Presupuestos</span>
     </a>
-</li-->
+</li>
 
 <li class="treeview {{Route::currentRouteName() == 'requisiciones.index' ? 'active':(Route::currentRouteName()== 'requisiciones.show' ? 'active':null)}}">
     <a href="{{url('requisiciones')}}">
@@ -65,5 +88,5 @@
             <li><a href="{{ url('paaccategorias') }}"><i class="fa fa-circle-o"></i> Categorias del Plan Anual</a></li>
             <li><a href="{{ url('giros') }}"><i class="fa fa-circle-o"></i>Giro de Proveedores</a></li>
         </ul>
-    </li>
+    </li-->
 

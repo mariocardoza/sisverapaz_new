@@ -1,5 +1,4 @@
-<ul class="sidebar-menu">
-        <li class="header">Menú Principal</li>
+<!--ul class="sidebar-menu">
         @if($emergencia>0)
         <li class="treeview active">
           <a href="{{ url('/directa') }}">
@@ -9,7 +8,6 @@
         </li>
         @endif
         <li class="{{Route::currentRouteName() =='home' ? 'active' : null}}"><a href="{{url('/home')}}">Página de inicio</a></li>
-    @if(Auth()->user()->hasRole('admin'))
     <li class="treeview {{ Route::currentRouteName() == 'configuraciones.create' ? 'active':null}}">
       <a href="{{ url('configuraciones') }}">
         <i class="glyphicon glyphicon-cog"></i><span>Administración</span>
@@ -83,9 +81,8 @@
         <li><a href="{{url('giros')}}"><i class="fa fa-circle-o"></i> Giro de proveedores</a></li>
         <li><a href="{{url('servicios')}}"><i class="fa fa-circle-o"></i> Listado de servicios</a></li>
       </ul>
-    </li>
-    
-    @endif
+    </li-->
+ 
     @if(Auth()->user()->hasRole('uaci'))
     @include('menu.uaci')
     @endif

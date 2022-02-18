@@ -50,7 +50,7 @@ Route::get('pdf',function(){
   return $pdf->stream('reporte.pdf');
 });
 //rutas para autorizaciones del administrador
-Route::Post('autorizacion', 'Homecontroller@autorizacion');
+Route::Post('autorizacion', 'HomeController@autorizacion');
 
 ///////////  RUTAS DE RESPALDO Y RESTAURAR BASE DE DATOS
 Route::get('backups','BackupController@index')->name('backups.index');
@@ -80,7 +80,7 @@ Auth::routes([
   'login' => true,
   'register' => false, 
   'reset' => true, 
-  'verify' => true, 
+  'verify' => false, 
 ]);
 
 Route::post('authenticate','Auth\LoginController@authenticate')->name('authenticate');
@@ -525,7 +525,7 @@ Route::get('reportestesoreria/reciboc/{id}','ReportesTesoreriaController@reciboc
 Route::get('reportestesoreria/recibop/{id}','ReportesTesoreriaController@recibop');
 Route::get('reportestesoreria/partida/{id}','ReportesTesoreriaController@partida');
 //Ruta para detalle de planillas
-Route::post('detalleplanillas/store2','DetallePlanillaController@store2');
+Route::post('detalleplanillas/store2','DetalleplanillaController@store2');
 Route::Resource('detalleplanillas','DetalleplanillaController');
 Route::Resource('bancos','BancoController');
 Route::post('bancos/baja/{id}','BancoController@baja')->name('bancos.baja');
@@ -602,4 +602,4 @@ Route::post('cementerios/alta/{id}','CementerioController@alta')->name('cementer
 Route::Resource("/cementerios", "CementerioController");
 
 
-Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+//Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');

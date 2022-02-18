@@ -24,7 +24,7 @@
 
         //autorización para requisiciones 
         $(document).on("click","#autorizacion_requi", function(e){
-          swal({
+          swal.fire({
             title: 'Buscando en la base de datos!',
             text: 'Este diálogo se cerrará al completar la operación.',
             allowOutsideClick: false,
@@ -625,17 +625,17 @@ function baja(id,ruta)
   }
 
   function modal_cargando(){
-        swal({
-          title: 'Cargando!',
-          text: 'Este diálogo se cerrará al completar la operación.',
-          allowOutsideClick: false,
-          allowEscapeKey: false,
-          showConfirmButton: false,
-          onOpen: function () {
-            swal.showLoading()
-          }
-        });
+    Swal.fire({
+      title: 'Cargando!',
+      text: 'Este diálogo se cerrará al completar la operación.',
+      allowOutsideClick: false,
+      allowEscapeKey: false,
+      showConfirmButton: false,
+      didOpen: function () {
+        swal.showLoading()
       }
+    });
+  }
 // Funciones para el empleado guardar y limpiar
 function guardarEmp()
 {

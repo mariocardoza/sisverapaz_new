@@ -22,10 +22,10 @@
             <div class="box-heading">
                 <br>
                 <div class="btn-group pull-right">
-                    <button id="rubros" title="Agregar rubros a categorías" class="btn btn-primary">Rubros</button>
-                    <button id="servicios" title="Servicios municipales" class="btn btn-primary">Servicios</button>
+                    <button id="rubros" title="Agregar rubros a categorías" class="btn btn-primary btn-accept">Rubros</button>
+                    <button id="servicios" title="Servicios municipales" class="btn btn-primary btn-accept">Servicios</button>
                     <button id="contribu" title="Agregar contribuyente" class="btn btn-success">Nuevo Contribuyente</button>
-                    <button id="generar_pagos" title="Generar pagos" class="btn btn-primary">Generar pagos</button>
+                    <button id="generar_pagos" title="Generar pagos" class="btn btn-primary btn-accept">Generar pagos</button>
                 </div>
                 <br><br>
             </div>

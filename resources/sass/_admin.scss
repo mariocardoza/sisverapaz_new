@@ -508,7 +508,7 @@
     }
   }
   .btn.btn-primary{
-    background-color: $carrot-orange;
+    background-color: $carrot-orange !important;
     border-color: $carrot-orange;
     &:hover, &:focus, &:active{
       color: $carrot-orange !important;
@@ -530,14 +530,6 @@
   }
 }
 
-.dt-buttons.btn-group.flex-wrap{
-  position: absolute;
-  top: -2em;
-  .btn.btn-secondary.buttons-html5{
-    letter-spacing: inherit;
-    padding: 6px 22px;
-  }
-}
 .swal2-styled.swal2-confirm{
   border-radius: 20px !important;
   padding: 8px 23px;
@@ -553,7 +545,6 @@
 .btn-secondary.buttons-excel.buttons-html5{
   color: $white !important;
   background-color: $disco;
-  border-radius: 20px;
 }
 
 .btn-see-deleted, .btn-add{
@@ -593,20 +584,15 @@ table.table-admin{
   }
 }
 
-.btn.btn-primary.btn-close-modal, .btn.btn-primary.btn-accept{
+.btn.btn-primary.btn-close-modal, .btn.btn-primary.btn-accept, btn.btn-success{
   border-radius: 10px;
   padding: 8px 20px;
   letter-spacing: inherit;
-  margin: 0 5px;
 }
 
-.btn.btn-primary.btn-close-modal{
+.btn-success{
   background-color: $bright-gray;
   border-color: $bright-gray;
-  &:hover, &:focus, &:active{
-    color: $bright-gray !important;
-    border-color: $bright-gray !important;
-  }
 }
 
 .btn.btn-primary.btn-accept{
@@ -615,21 +601,6 @@ table.table-admin{
   &:hover, &:focus, &:active{
     color: $disco !important;
     border-color: $disco !important;
-  }
-}
-
-.btn.btn-primary.btn-accept.inactive{
-  color: $disco !important;
-  border-color: $disco !important;
-  background-color: $white !important;
-}
-
-.btn.btn-primary.btn-expired{
-  background-color: $amarantha-red;
-  border-color: $amarantha-red;
-  &:hover, &:focus, &:active{
-    color: $amarantha-red !important;
-    border-color: $amarantha-red !important;
   }
 }
 

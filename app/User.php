@@ -80,13 +80,13 @@ class User extends Authenticatable
       }
     return false;
   }
-public function hasRole($role)
-{
-    if ($this->roles()->where('name', $role)->first()) {
-        return true;
-    }
-    return false;
-}
+  public function hasRole($role)
+  {
+      if ($this->roles()->where('name', $role)->first()) {
+          return true;
+      }
+      return false;
+  }
 
   public static function modal_editar($id)
   {

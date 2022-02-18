@@ -1,44 +1,31 @@
 @extends('layouts.app')
 
-@section('migasdepan')
-<h1>
-        Requisiciones
-        
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="{{ url('/home') }}"><i class="glyphicon glyphicon-home"></i> Inicio</a></li>
-        <li class="active">Listado de requisiciones</li>
-      </ol>
-@endsection
-
 @section('content')
-<div class="row">
-<div class="col-xs-12">
-          <div class="box">
-            <div class="box-header">
-              <br>
-              <div class="row">
-                <div class="col-md-12">
-                  <p></p>
-                  <div class="col-md-6">
-                  <select name="" id="select_anio" title="Ver requisiciones por año" class="chosen-select">
-                    <option selected value="0">Seleccione un año</option>
-                    @foreach ($anios as $anio)
-                        <option value="{{$anio->anio}}">{{$anio->anio}}</option>
-                    @endforeach
-                  </select>
-                </div>
-                  <div class="btn-group pull-right">
-                    <a href="{{ url('/requisiciones/create') }}" title="Crear nuevo" class="btn btn-success"><span class="fa fa-plus-circle"></span></a>
-                    <a href="javascript:void(0)" data-tipo="1" title="Requisiciones activas" class="btn btn-primary elver">Activos</a>
-                    <a href="javascript:void(0)" data-tipo="9" title="Requisiciones combinadas para cotizar" class="btn btn-primary elver">Combinados</a>
-                    <a href="javascript:void(0)" data-tipo="2" title="Requisiciones canceladas" class="btn btn-primary elver">Cancelados</a>
-                    <a href="javascript:void(0)" data-tipo="8" title="Requisiciones finalizadas" class="btn btn-primary elver">Finalizados</a>
-                  </div>
-                </div>
-                
-              </div>
-              <br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <p></p>
+      <div class="col-md-6">
+      <select name="" id="select_anio" title="Ver requisiciones por año" class="chosen-select">
+        <option selected value="0">Seleccione un año</option>
+        @foreach ($anios as $anio)
+            <option value="{{$anio->anio}}">{{$anio->anio}}</option>
+        @endforeach
+      </select>
+    </div>
+      <div class="btn-group pull-right">
+        <a href="{{ url('/requisiciones/create') }}" title="Crear nuevo" class="btn btn-success"><span class="fa fa-plus-circle"></span></a>
+        <a href="javascript:void(0)" data-tipo="1" title="Requisiciones activas" class="btn btn-primary elver">Activos</a>
+        <a href="javascript:void(0)" data-tipo="9" title="Requisiciones combinadas para cotizar" class="btn btn-primary elver">Combinados</a>
+        <a href="javascript:void(0)" data-tipo="2" title="Requisiciones canceladas" class="btn btn-primary elver">Cancelados</a>
+        <a href="javascript:void(0)" data-tipo="8" title="Requisiciones finalizadas" class="btn btn-primary elver">Finalizados</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <br>
+    <br>
 
               <div class="col-md-3">
                 <input type="checkbox" name="muchos" class="muchos"> Consolidar 2 o más requisiciones
@@ -46,30 +33,27 @@
               <div class="col-md-2">
                 <button class="btn btn-primary combinar" style="display: none;" id="combinar">Consolidar</button>
               </div>
-          </div>
-            <!-- /.box-header -->
-            <div class="box-body table-responsive" id="aqui_tabla">
-              <table class="table table-striped table-bordered" id="latabla">
-                <thead>
-                  <th width="3%"><center>N°</center></th>
-                  <th width="10%"><center>Código</center></th>
-                  <th><center>Actividad</center></th>
-                  <th><center>Unidad Administrativa</center></th>
-                  <th><center>Fuente de Financiamiento</center></th>
-                  <th><center>Responsable</center></th>
-                  <!--th>Observaciones</th-->
-                  <th><center>Estado</center></th>
-                  <th><center>Acciones</center></th>
-                </thead>
-                <tbody>
-                  
-                </tbody>
-              </table>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-        </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-striped table-bordered" id="latabla">
+        <thead>
+          <th width="3%"><center>N°</center></th>
+          <th width="10%"><center>Código</center></th>
+          <th><center>Actividad</center></th>
+          <th><center>Unidad Administrativa</center></th>
+          <th><center>Fuente de Financiamiento</center></th>
+          <th><center>Responsable</center></th>
+          <!--th>Observaciones</th-->
+          <th><center>Estado</center></th>
+          <th><center>Acciones</center></th>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
 @endsection
 @section('scripts')
@@ -163,7 +147,7 @@
   }
 
   function cargar_requisiciones(tipo){
-    modal_cargando();
+    //modal_cargando();
     $.ajax({
       url:'requisiciones/portipo/'+tipo,
       type:'get',
@@ -174,7 +158,7 @@
           $("#aqui_tabla").empty();
           $("#aqui_tabla").html(json[1]);
           
-          swal.closeModal();
+          swal.close();
           
         }
         else{
