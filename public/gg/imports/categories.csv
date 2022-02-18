@@ -1,0 +1,36 @@
+category,description,subcategory,organization
+RECLAMO,Todos los reclamos,Bien y/o servicio no brindado,MINSAL
+RECLAMO,Todos los reclamos,CONDICION DE INFRAESTRUCTURA,MINEDUCYT
+RECLAMO,Todos los reclamos,Desabastecimiento de insumo médico,MINSAL
+RECLAMO,Todos los reclamos,Desabastecimiento de medicamento,MINSAL
+RECLAMO,Todos los reclamos,Desacuerdo con decisión del Tribunal Calificador de la Carrera Docente ,MINEDUCYT
+QUEJA,Todas las quejas,Acoso Laboral y/o discriminación a los empleados del ISBM,MINSAL
+QUEJA,Todas las quejas,ACOSO SEXUAL por alumno,MINEDUCYT
+QUEJA,Todas las quejas,ACOSO SEXUAL por Empleado administrativo o docente,MINEDUCYT
+QUEJA,Todas las quejas,ACOSO SEXUAL por particular,MINEDUCYT
+QUEJA,Todas las quejas,Ampliación de horarios de atención,MINSAL
+FELICITACIÓN,Todas las felicitaciones,Felicitaciones a un empleado(s) de la institución,MINEDUCYT
+FELICITACIÓN,Todas las felicitaciones,Felicitaciones a un empleado(s) de la institución,MINSAL
+FELICITACIÓN,Todas las felicitaciones,Felicitaciones por el ágil tramite del servicio recibido,MINEDUCYT
+FELICITACIÓN,Todas las felicitaciones,Felicitaciones por el trabajo del Ministerio de Salud,MINSAL
+FELICITACIÓN,Todas las felicitaciones,Felicitaciones por el trabajo del Ministerio de Educación,MINEDUCYT
+AVISO,Todos los avisos,A01 Sospecha de acoso de personal ISSS hacia usuario,MINSAL
+AVISO,Todos los avisos,A 07 Sospecha de comportamiento anti ético de empleado ISSS,MINSAL
+AVISO,Todos los avisos,Advertencia de una denuncia,MINSAL
+AVISO,Todos los avisos,Afectación a Área Natural protegida,MINSAL
+AVISO,Todos los avisos,Calle obstaculizada,MINEDUCYT
+CONSULTA,Todas las consultas,Actividades Institucionales,MINEDUCYT
+CONSULTA,Todas las consultas,Consulta,MINSAL
+CONSULTA,Todas las consultas,Consulta de dirección física y electrónicas de la institución o de funcionarios,MINSAL
+CONSULTA,Todas las consultas,Consulta de procedimientos a seguir para accesar a los servicios que brinda la institución,MINEDUCYT
+CONSULTA,Todas las consultas,Consulta número telefónico,MINEDUCYT
+PETICIÓN,Todas las peticiones,"Abastecer a los hospitales, unidades de salud y clínicas; de medicamentos e insumos médicos",MINSAL
+PETICIÓN,Todas las peticiones,Acceso de agua,MINEDUCYT
+PETICIÓN,Todas las peticiones,AMPLIACION DE COBERTURA DE PROGRAMAS SOCIALES,MINSAL
+PETICIÓN,Todas las peticiones,Ampliación de horarios de atención,MINSAL
+PETICIÓN,Todas las peticiones,Aspectos o trámites administrativos internos en general,MINEDUCYT
+SUGERENCIA,Todas las sugerencias,Acercar los servicios financieros y no financieros a la población en todo el país ,MINEDUCYT
+SUGERENCIA,Todas las sugerencias,A los servicios que presta la institucion,MINEDUCYT
+SUGERENCIA,Todas las sugerencias,Ampliación de horarios de atención,MINEDUCYT
+SUGERENCIA,Todas las sugerencias,Cambio de personal de atención,MINEDUCYT
+SUGERENCIA,Todas las sugerencias,Cambios en señalización vial,MINEDUCYT

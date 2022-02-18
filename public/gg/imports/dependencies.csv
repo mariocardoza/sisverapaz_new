@@ -1,0 +1,27 @@
+organization,department_id,municipality_id,name,address
+MINSAL,6,214,Hospital Rosales,
+MINSAL,6,214,Hospital Nacional de la Mujer,
+MINSAL,6,214,"Hospital Nacional de Niños ""Benjamín Bloom""",
+MINSAL,6,214,Clínica Comunal San Esteban,
+MINSAL,13,103,Clínica Comunal San Francisco Gotera,
+MINSAL,8,219,Clínica Comunal San Jose Villanueva,
+MINSAL,11,64,Clínica Comunal San Marcos Lempa,
+MINSAL,6,214,Clínica Comunal Panamericana,
+MINSAL,6,214,Clínica Comunal San Antonio Abad,
+MINSAL,6,214,Clínica Comunal San Antonio (Sta. Tecla),
+MINSAL,6,214,Clínica Comunal San Cristobal,
+MINSAL,6,214,Clínica Comunal San Esteban,
+MINSAL,6,214,Clínica Comunal San Francisco,
+MINSAL,6,214,Clínica Comunal San Jose,
+MINSAL,6,214,Clínica Comunal San Marcos,
+MINEDUCYT,6,214,"Ministerio de Educación, Ciencia y Tecnología",
+MINEDUCYT,6,214,DIRECCION DE ASESORIA JURIDICA,"Edificios A, Plan Maestro, Centro de Gobierno, Alameda Juan Pablo II y calle Guadalupe, San Salvador."
+MINEDUCYT,6,214,DIRECCION DE AUDITORIA INTERNA,"Edificios A, Plan Maestro, Centro de Gobierno, Alameda Juan Pablo II y calle Guadalupe, San Salvador."
+MINEDUCYT,6,214,DIRECCION DE CONTRATACIONES INSTITUCIONALES - UACI,"Edificios A, Plan Maestro, Centro de Gobierno, Alameda Juan Pablo II y calle Guadalupe, San Salvador."
+MINEDUCYT,1,1,DIRECCION DEPARTAMENTAL DE AHUACHAPAN,"Cuarta Avenida Norte Número 1-15, frente a Unidad de Salud de Ahuachapán"
+MINEDUCYT,9,244,DIRECCION DEPARTAMENTAL DE CABAÑAS,"Quinta Avenida Sur y Final Cuarta Calle Poniente, Barrio El Calvario, Centro de Gobierno. Sensuntepeque, Cabañas."
+MINEDUCYT,5,155,DIRECCION DEPARTAMENTAL DE CHALATENANGO,"Final Sexta Avenida Sur, Barrio San Antonio, frente a Colonia Los Pinares, contiguo a ESMA, Chalatenango"
+MINEDUCYT,7,184,DIRECCION DEPARTAMENTAL DE CUSCATLAN,"Primera Calle Oriente Número 43, Barrio Santa Lucía, media cuadra abajo del Liceo Raúl Contreras, Cojutepeque."
+MINEDUCYT,4,138,DIRECCION DEPARTAMENTAL DE LA LIBERTAD,"Final Avenida Robert Baden Powell, Contiguo a Canal 10, Santa Tecla."
+MINEDUCYT,8,219,DIRECCION DEPARTAMENTAL DE LA PAZ,"Carretera Litoral, Kilometro 56 y medio contiguo a la Gobernación Departamental de Zacatecoluca."
+MINEDUCYT,14,111,DIRECCION DEPARTAMENTAL DE LA UNION,"Avenida General Cabañas y Quinta Calle Oriente, Edificio Centro de Gobierno, La Unión."

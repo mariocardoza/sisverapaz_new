@@ -1,0 +1,87 @@
+#bg-login{
+  font-family: "roboto-regular";
+  height: 100%;
+  background-color: $christalle;
+  #bg-footer-login{
+    position: fixed;
+    bottom: 0;
+    padding-left: 12px;
+    a, a:hover{
+      color: $white;
+      margin-bottom: 15px;
+    }
+  }
+  input[type="text"], input[type="password"]{
+    border-radius: 30px;
+    border-color: 0;
+    height: 45px;
+    padding-left: 45px;
+    font-family: "roboto-medium";
+    font-size: 16px;
+    background-color: transparent;
+  }
+  .input-login-user, .input-login-password, .input-login-email {
+    background-image: url('/images/user-icon.png');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-color: $white;
+    border-radius: 30px;
+    margin-bottom: 15px;
+  }
+  .input-login-password {
+    background-image: url('/images/lock-icon.png');
+  }
+  .input-login-email {
+    background-image: url('/images/email-icon.png');
+  }
+  .field-icon {
+    float: right;
+    margin-top: -33px;
+    position: relative;
+    z-index: 2;
+    padding-right: 1.5em;
+    font-size: 20px;
+    opacity: 0.6;
+  }
+  .btn-link-recover{
+    color: $white;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $white;
+  }
+  .invalid-feedback{
+    position: absolute;
+  }
+  .card-header{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-family: "roboto-medium";
+  }
+  &:before, &:after{
+    content: "";
+    background-image: url("/images/bg-about.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 270px;
+    height: 340px;
+    position: absolute;
+    top: 0;
+    transform: rotate(180deg);
+  }
+  &:after{
+    top: inherit;
+    bottom: 0;
+    right: 0;
+    transform: rotate(0deg);
+  }
+  h3.title-login{
+    color: $white;
+    font-family: "roboto-bold";
+  }
+  .btn.btn-primary.btn-login{
+    width: 100%;
+    letter-spacing: normal;
+    font-size: 18px;
+  }
+}

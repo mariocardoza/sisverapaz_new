@@ -1,0 +1,249 @@
+.create-advisory-form {
+  padding: 5em 1em;
+  @media (max-width: 479px){
+    padding: 3em 0;
+  }
+  #file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  #file + label {
+    cursor: pointer;
+  }
+
+  #file:focus + label,
+  #file + label:hover {
+    opacity: 0.6;
+  }
+
+  #select-style, input[type="text"], input[type="time"], textarea{
+    background-color: $selago;
+    height: 40px;
+    border: 1px solid #CBDAEF;
+    color: $bright-gray;
+    border-radius: 0px;
+    margin-bottom: 10px;
+  }
+
+  #select-style{
+    text-align: left;
+    @media (max-width: 767px){
+      margin-bottom: 25px;
+    }
+  }
+
+  textarea{
+    height: auto;
+  }
+
+  input[type="checkbox"]{
+    height: auto;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    box-shadow: none;
+    font-size: 2em;
+  }
+
+  input[type="radio"]{
+    margin-left: 15px;
+  }
+
+  .label-anonymous, .label-foreigner, .label-victim{
+    font-family: "roboto-bold";
+  }
+
+  .label-anonymous{
+    margin-bottom: 0;
+  }
+
+  .show-victim-group{
+    display: none;
+  }
+
+  .file-upload{
+    padding: 2em;
+    background-color: $selago;
+    border: 5px dashed #CBDAEF;
+    border-radius: 15px;
+  }
+
+  p{
+    font-family: "roboto-medium";
+    color: $bright-gray;
+  }
+
+  .content.clearfix {
+    /*-moz-box-shadow: 0px 3px 8px #a1a1a1;
+    -webkit-box-shadow: 0px 3px 8px #a1a1a1;
+    box-shadow: 0px 3px 8px #a1a1a1;
+    border-radius: 25px 25px 0 0 !important;*/
+    border: 0;
+    padding: 0em 4em 0em 4em;
+    position: relative;
+    background-color: $white;
+    margin-bottom: 0em;
+    overflow: revert;
+    @media (max-width: 479px){
+      padding: 2em 1em;
+    }
+  }
+
+  #group-victim-data{
+    input{
+      width: 89%;
+      display: inline-block;
+      margin-bottom: 5px;
+      @media (max-width: 1300px){
+        width: 83%;
+      }
+    }
+    a{
+      width: 10%;
+      background-color: $selago;
+      border-color: #CBDAEF;
+      height: 40px;
+      padding: 5px 18px;
+      border-radius: 0;
+      margin-bottom: 2px;
+      color: $pely-sky;
+      @media (max-width: 1300px){
+        width: 15%;
+        padding: 4px;
+      }
+    }
+  }
+
+  .add-item-additional{
+    margin-bottom: 5px;
+    display: block;
+    &:hover{
+      color: $carrot-orange;
+    }
+  }
+
+  .add-victim-group{
+    margin-bottom: 5px;
+    display: inline-block;
+    &:hover{
+      color: $carrot-orange;
+    }
+  }
+}
+
+.card {
+  border: 0 !important;
+  background-color: transparent !important;
+  z-index: 0;
+  border: none;
+  border-radius: 0.5rem;
+  position: relative
+}
+
+.steps ul {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.steps ul li.current {
+  p{
+    color: $carrot-orange;
+  }
+}
+
+.steps ul li {
+  list-style-type: none;
+  font-size: 12px;
+  width: 33.33%;
+  float: left;
+  position: relative;
+  p{
+    font-size: 20px;
+    font-family: "roboto-medium";
+    padding: 0 20px;
+    line-height: 20px;
+  }
+  @media (max-width: 479px){
+    a{
+      font-size: 13px;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+}
+
+.steps ul li:first-child:before {
+  content: "";
+  background-image: url('/images/personales.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.steps ul li:nth-child(2):before {
+  content: "";
+  background-image: url('/images/deudas.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.steps ul li:last-child:before {
+  content: "";
+  background-image: url('/images/enviar.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.steps ul li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 18px;
+  color: #ffffff;
+  background: $catskill-withe;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+.steps ul li:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: $catskill-withe;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: 0
+}
+
+.steps ul li:first-child:after {
+  content: '';
+  left: inherit;
+  right: 0;
+  width: 50%;
+}
+
+.steps ul li:last-child:after {
+  content: '';
+  left: 0;
+  right: inherit;
+  width: 50%;
+}
+
+.steps ul li.current:before,
+.steps ul li.current:after,
+.steps ul li.done:after,
+.steps ul li.done:before {
+  background-color: $carrot-orange;
+}
+
+.wizard > .steps .number{
+  display: none;
+}
