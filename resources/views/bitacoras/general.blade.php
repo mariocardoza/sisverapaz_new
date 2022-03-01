@@ -29,12 +29,14 @@
             <label for="" class="cmbusuario control-label">Empleado</label>
             <label for="" class="txtdia control-label">Fecha</label>
             <div class="col-md-6">
-              <select class="cmbusuario form-control" id="cmbusuario"  name="usuario">
-                <option value="">Seleccione un usuario</option>
-                @foreach($usuarios as $usuario)
-                  <option value="{{$usuario->id}}">{{$usuario->empleado->nombre}}</option>
-                @endforeach
-              </select>
+              <div id="select-style">
+                <select class="cmbusuario form-control" id="cmbusuario"  name="usuario">
+                  <option value="">Seleccione un usuario</option>
+                  @foreach($usuarios as $usuario)
+                    <option value="{{$usuario->id}}">{{$usuario->empleado->nombre}}</option>
+                  @endforeach
+                </select>
+              </div>
               <input type="text" id="txtdia" name="dia" class="txtdia form-control">
             </div>
         </div>

@@ -15,42 +15,37 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   {{-- Styles for user admin --}}
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/sweetalert2.min.css') }}" rel="stylesheet">
   <link href="{{ asset('css/plugins/coreui/coreui.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/plugins/jquery-steps/jquery.steps.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/plugins/jquery-ui/jquery-ui.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/plugins/jquery-ui/jquery-ui.multidatespicker.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/plugins/slick-slider/slick.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/css/highcharts.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/css/jquery-ui.css') }}" rel="stylesheet">
   <link href="{{ asset('css/plugins/datatables/datatables.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/plugins/toastr/toastr.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/plugins/mdtimepicker/mdtimepicker.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/plugins/mdtimepicker/mdtimepicker-theme.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/plugins/dropzone/dropzone.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/plugins/intl-tel/intl-tel.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/plugins/suggestedtags/amsify.suggestags.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/css/bootstrap-datetimepicker.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/css/chosen.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/css/toastr.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/sweetalert2.min.css') }}" rel="stylesheet">
+
   {{-- Scripts for user admin --}}
   <script src="{{ asset('js/app.js') }}" defer></script>
-  <script src="{{ asset('js/funcionesgenerales.js') }}" defer></script>
   <script src="/js/plugins/jquery/jquery.min.js"></script>
-  <script src="/js/plugins/jquery-steps/jquery.steps.min.js" defer></script>
-  <script src="/js/plugins/jquery-ui/jquery-ui.js" defer></script>
-  <script src="/js/plugins/jquery-ui/jquery-ui.multidatespicker.js" defer></script>
-  <script src="/js/plugins/coreui/coreui.bundle.min.js" defer></script>
-  <script src="/js/plugins/slick-slider/slick.min.js" defer></script>
+  <script src="{{ asset('assets/js/highcharts.js') }}" defer></script>
+  <script src="{{ asset('assets/js/highchart.data.js') }}" defer></script>
+  <script src="{{ asset('assets/js/highchart.exporting.js') }}" defer></script>
+  <script src="{{ asset('assets/js/highchart.export-data.js') }}" defer></script>
+  <script src="{{ asset('assets/js/jquery-ui.js') }}" defer></script>
+  <script src="{{ asset('assets/js/jquery.mask.min.js') }}" defer></script>
+  <script src="{{ asset('assets/js/jquery.inputmask.js') }}" defer></script>
   <script src="/js/plugins/datatables/datatables.min.js" defer></script>
-  <script src="/js/plugins/toastr/toastr.min.js" defer></script>
-  <script src="/js/plugins/mdtimepicker/mdtimepicker.min.js" defer></script>
-  <script src="/js/plugins/jquery-mask/jquery.mask.js" defer></script>
-  <script src="/js/plugins/jquery-mask/jquery.inputmask.min.js" defer></script>
-  <script src="/js/plugins/jquery-mask/inputmask.min.js"></script>
-  <script src="/js/sweetalert2.min.js"></script>
-  <script src="/js/plugins/chartjs/chart.min.js"></script>
-  <script src="/js/plugins/chartjs/chartjs-datalabels.js"></script>
-  <script src="/js/plugins/jquery-ui/bootstrap-datepicker.es.js" defer></script>
-  <script src="/js/es.js"></script>
-  <script src="/js/plugins/intl-tel/intl-tel.min.js" defer></script>
-  <script src="/js/plugins/suggestedtags/jquery.amsify.suggestags.js" defer></script>
-  <script src="/js/plugins/ckeditor/ckeditor.js" defer></script>
+  <script src="{{ asset('assets/js/bootstrap-datetimepicker.min.js') }}" defer></script>
+  <script src="{{ asset('assets/js/bootstrap-datetimepicker.es.js') }}" defer></script>
+  <script src="{{ asset('assets/js/chosen.jquery.js') }}" defer></script>
+  <script src="{{ asset('assets/js/toastr.js') }}" defer></script>
+  <script src="{{ asset('assets/js/moment.min.js') }}" defer></script>
+  <script src="{{ asset('assets/js/sweetalert2.min.js') }}" defer></script>
+
+
+  <script src="{{ asset('js/funcionesgenerales.js') }}" defer></script>
+  <script src="/js/plugins/coreui/coreui.bundle.min.js" defer></script>
+ 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhvC3rIiMvEM4JUPAl4fG1xNPRKoRnoTg"></script>
 
   

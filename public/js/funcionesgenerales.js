@@ -101,7 +101,7 @@
       })
     });
 
-  jQuery.extend(jQuery.validator.messages, {
+  /*jQuery.extend(jQuery.validator.messages, {
       required: "Este campo es obligatorio.",
       remote: "Por favor, rellena este campo.",
       email: "Por favor, escribe una dirección de correo válida",
@@ -119,7 +119,7 @@
       range: jQuery.validator.format("Por favor, escribe un valor entre {0} y {1}."),
       max: jQuery.validator.format("Por favor, escribe un valor menor o igual a {0}."),
       min: jQuery.validator.format("Por favor, escribe un valor mayor o igual a {0}.")
-    });
+    });*/
 
     $('.nit').inputmask("9999-999999-999-9", { "clearIncomplete": true });
     $('.dui').inputmask("99999999-9", { "clearIncomplete": true });
@@ -293,7 +293,7 @@
           });
         
 
-          var register = $("#form-register");
+          /*var register = $("#form-register");
               register.steps({
                 headerTag: "h3",
                 bodyTag: "section",
@@ -308,7 +308,7 @@
                 stepsOrientation: "vertical",
                 enableAllSteps: true,
                 enablePagination: false
-              });
+              });*/
 
               $('.datetimepicker').datetimepicker({
                   language:'es',
