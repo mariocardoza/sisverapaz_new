@@ -1,6 +1,6 @@
 <div class="form-group">
-  <label for="" class="col-md-2 control-label">Obra, Bien o Servicio</label>
-  <div class="col-md-8">
+  <label for="" class="control-label">Obra, Bien o Servicio</label>
+  <div class="">
     {{ Form::textarea('obra', null,['class' => 'form-control','rows' => 3,'id' => 'obra']) }}
   </div>
 </div>
@@ -14,20 +14,20 @@
 </div>
 
 <div class="form-group">
-  <div class="col-md-3">
-    <label for="" class="col-md-2 control-label">Enero</label>
+  <div class="col-3">
+    <label for="" class="control-label">Enero</label>
     {{ Form::number('enero', null,['class' => 'form-control ','id' => 'ene','steps' => 0.00,'min' => 0]) }}
   </div>
-  <div class="col-md-3">
-    <label for="" class="col-md-2 control-label">Febrero</label>
+  <div class="col-3">
+    <label for="" class="control-label">Febrero</label>
     {{ Form::number('febrero', null,['class' => 'form-control ','id' => 'feb','steps' => 0.00,'min' => 0]) }}
   </div>
-  <div class="col-md-3">
-    <label for="" class="col-md-2 control-label">Marzo</label>
+  <div class="col-3">
+    <label for="" class="control-label">Marzo</label>
     {{ Form::number('marzo', null,['class' => 'form-control ','id' => 'mar','steps' => 0.00,'min' => 0]) }}
   </div>
 
-  <div class="col-md-3">
+  <div class="col-3">
     <label for="" class="col-md-2 control-label">Abril</label>
     {{ Form::number('abril', null,['class' => 'form-control ','id' => 'abr','steps' => 0.00,'min' => 0]) }}
   </div>

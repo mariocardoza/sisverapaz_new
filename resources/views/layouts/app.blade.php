@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   {{-- Styles for user admin --}}
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/sweetalert2.min.css') }}" rel="stylesheet">
   <link href="{{ asset('css/plugins/coreui/coreui.min.css') }}" rel="stylesheet">
   <link href="{{ asset('css/plugins/jquery-steps/jquery.steps.css') }}" rel="stylesheet">
   <link href="{{ asset('css/plugins/jquery-ui/jquery-ui.css') }}" rel="stylesheet">
@@ -42,11 +43,11 @@
   <script src="/js/plugins/jquery-mask/jquery.mask.js" defer></script>
   <script src="/js/plugins/jquery-mask/jquery.inputmask.min.js" defer></script>
   <script src="/js/plugins/jquery-mask/inputmask.min.js"></script>
-  <script src="/js/plugins/sweet-alert/sweet-alert2.js"></script>
+  <script src="/js/sweetalert2.min.js"></script>
   <script src="/js/plugins/chartjs/chart.min.js"></script>
   <script src="/js/plugins/chartjs/chartjs-datalabels.js"></script>
   <script src="/js/plugins/jquery-ui/bootstrap-datepicker.es.js" defer></script>
-  <script src="/js/plugins/dropzone/dropzone.js"></script>
+  <script src="/js/es.js"></script>
   <script src="/js/plugins/intl-tel/intl-tel.min.js" defer></script>
   <script src="/js/plugins/suggestedtags/jquery.amsify.suggestags.js" defer></script>
   <script src="/js/plugins/ckeditor/ckeditor.js" defer></script>
@@ -66,7 +67,9 @@
     </div>
 
     <ul class="c-sidebar-nav ps ps--active-y">
-      @if(Auth()->user()->hasRole('uaci'))
+      @if(Auth()->user()->hasRole('admin'))
+        @include('menu.admin')
+      @elseif(Auth()->user()->hasRole('uaci'))
         @include('menu.uaci')
       @endif
     </ul>

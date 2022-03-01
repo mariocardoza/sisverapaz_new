@@ -18,29 +18,21 @@
                         })->get();
                         
   @endphp
-@section('migasdepan')
-<h1>
-        Usuarios
-        <small></small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="{{ url('/home') }}"><i class="glyphicon glyphicon-home"></i> Inicio</a></li>
-        <li class="active">Listado de Usuarios</li>
-      </ol>
-@endsection
+
 
 @section('content')
+<div class="container">
   <div class="row">
-    <div class="col-xs-12">
-              <div class="box">
-                <div class="box-header">
+    <div class="col-md-12">
+              <div class="card">
+                <div class="card-header">
                   <h3 class="box-title"></h3>
                   <div class="btn-group pull-right">
                     <a href="javascript:void(0)" id="md_user" class="btn btn-success">Nuevo <span class="glyphicon glyphicon-plus-sign"></span></a>
                   </div>
                 </div>
                 <!-- /.box-header -->
-                <div class="box-body table-responsive no-padding">
+                <div class="card-body table-responsive no-padding">
                   <table class="table table-hover table-bordered table-striped" id="example2">
       				<thead>
                       <th>N°</th>
@@ -68,17 +60,17 @@
                           @endif
                         </td>
                         @if($user->estado == 1 )
-                          <td><label for="" class="col-xs-12 label-success"> <i class="fa fa-thumbs-o-up" ></i> Activo</label></td>
+                          <td><label for="" class="col-12 label-success"> <i class="fas fa-thumbs-up" ></i> Activo</label></td>
                           <td>
-                              {{ Form::open(['method' => 'POST',  'class' => 'form-horizontal'])}}          
-                                <a title="Editar" href="javascript:void(0)" id="eledit" data-id="{{$user->id}}" class="btn btn-warning btn-sm"><span class="fa fa-edit"></span></a>
-                                <button title="Eliminar" class="btn btn-danger btn-sm baja" type="button" data-id="{{$user->id}}" ><span class="fa fa-remove"></span></button>
+                              {{ Form::open(['method' => 'POST',  'class' => ''])}}          
+                                <a title="Editar" href="javascript:void(0)" id="eledit" data-id="{{$user->id}}" class="btn btn-warning btn-sm"><span class="fas fa-edit"></span></a>
+                                <button title="Eliminar" class="btn btn-danger btn-sm baja" type="button" data-id="{{$user->id}}" ><span class="fas fa-times"></span></button>
                             {{ Form::close()}}
                           </td>
                           @else
-                          <td><label for="" class="col-xs-12 label-danger"><i class="fa fa-thumbs-o-down"></i> Inactivo </label></td>
+                          <td><label for="" class="col-12 label-danger"><i class="fas fa-thumbs-down"></i> Inactivo </label></td>
                           <td>  
-                            <button title="Restaurar" class="btn btn-success btn-sm restaura" data-id="{{$user->id}}" type="button"><span class="fa fa-refresh"></span></button> 
+                            <button title="Restaurar" class="btn btn-success btn-sm restaura" data-id="{{$user->id}}" type="button"><span class="fas fa-sync"></span></button> 
                           </td>
                         @endif
                         
@@ -93,12 +85,14 @@
               <!-- /.box -->
             </div>
   </div>
+</div>
   <div class="modal fade" tabindex="-1" id="modal_usuario" role="dialog" aria-labelledby="gridSystemModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title text-center" id="gridSystemModalLabel">Registrar usuario del sistema</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+       
         </div>
         <div class="modal-body">
           <form id="fm_user">    	

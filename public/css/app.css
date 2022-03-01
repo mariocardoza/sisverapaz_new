@@ -1009,20 +1009,18 @@
   border-color: #313945 !important;
 }
 
-.swal2-styled.swal2-confirm {
+/*.swal2-styled.swal2-confirm{
   border-radius: 20px !important;
   padding: 8px 23px;
 }
-
-.swal2-styled.swal2-cancel {
+.swal2-styled.swal2-cancel{
   border-radius: 20px !important;
   padding: 8px 23px;
 }
-
-.swal2-styled.swal2-deny {
+.swal2-styled.swal2-deny{
   border-radius: 20px !important;
   padding: 8px 23px;
-}
+}*/
 
 .btn-secondary.buttons-excel.buttons-html5 {
   color: #FFFFFF !important;
@@ -1870,15 +1868,17 @@ btn.btn-success {
   height: auto;
 }
 
-.swal2-actions button.swal2-styled {
-  padding: 8px 20xp;
-  font-size: 14px;
-  font-family: "roboto-medium";
+/*.swal2-actions{
+  button.swal2-styled{
+    padding: 8px 20xp;
+    font-size: 14px;
+    font-family: "roboto-medium";
+  }
 }
 
-#swal2-content {
+#swal2-content{
   font-family: "roboto-bold";
-}
+}*/
 
 @media (min-width: 992px) {
   .divided-text {

@@ -13,11 +13,11 @@
 @section('content')
 <div class="row">
 <div class="col-md-12">
-          <div class="box">
+          <div class="card">
             <p></p>
-            <div class="box-header">
+            <div class="card-header">
               <br>
-                  <div class="pull-right">
+                  <div class="float-right">
                     <a id="crear" href="javascript:void(0)" title="Crear Nuevo" class="btn btn-success"><span class="fa fa-plus-circle"></span></a>
                     <p></p>                    
                   </div>
@@ -36,7 +36,7 @@
                   <button class="btn btn-primary btn-sm" title="Buscar" id="btn_anio">Buscar</button>
             </div>
             <!-- /.box-header -->
-            <div class="box-body table-responsive">
+            <div class="card-body table-responsive">
               <table class="table table-striped table-bordered table-hover" id="example2">
           <thead>
                   <th><center>N°</center></th>

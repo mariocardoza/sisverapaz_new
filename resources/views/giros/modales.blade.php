@@ -2,8 +2,9 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content modal-sm">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				<h4 class="modal-title" id="myModalLabel">Agregar Nuevo</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
 			</div>
 			<div class="modal-body">
 				<form id="form_giro">
@@ -27,8 +28,8 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content modal-sm">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				<h4 class="modal-title" id="myModalLabel">Editar</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			</div>
 			<div class="modal-body">
 				<form id="form_edit">

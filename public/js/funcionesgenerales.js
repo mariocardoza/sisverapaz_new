@@ -1,6 +1,6 @@
 //funciones dentro del document
 
-      $(document).ready(function () {
+    $(function(e){
         $.ajaxSetup({
             headers: {
               'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -625,13 +625,13 @@ function baja(id,ruta)
   }
 
   function modal_cargando(){
-    Swal.fire({
+    swal({
       title: 'Cargando!',
       text: 'Este diálogo se cerrará al completar la operación.',
       allowOutsideClick: false,
       allowEscapeKey: false,
       showConfirmButton: false,
-      didOpen: function () {
+      onOpen: function () {
         swal.showLoading()
       }
     });

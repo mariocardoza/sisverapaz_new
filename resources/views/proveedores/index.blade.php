@@ -13,8 +13,8 @@
 @section('content')
 <div class="row">
   <div class="col-md-12">
-    <div class="box">
-      <div class="box-header ">
+    <div class="card">
+      <div class="card-header ">
         <p></p>
         <div class="btn-group pull-right">
           <br>                
@@ -40,7 +40,7 @@
       <p></p>
             
             <!-- /.box-header -->
-      <div class="box-body table-responsive">
+      <div class="card-body table-responsive">
         <table class="table table-striped table-bordered table-hover" id="latabla">
   				<thead>
             <th width="3%"><center>N°</center></th>
@@ -68,12 +68,12 @@
                   <div class="btn-group">
                     <a href="{{ url('proveedores/'.$proveedor->id) }}" title="Ver" class="btn btn-primary"><span class="fa fa-eye"></span></a>
                     <a href="javascript:void(0)" data-id="{{$proveedor->id}}" id="btn_edit" title="Editar" class="btn btn-warning"><span class="fa fa-edit"></span></a>
-                    <button class="btn btn-danger" title="Desactivar" type="button" onclick={{ "baja(".$proveedor->id.",'proveedores')" }}><span class="fa fa-thumbs-o-down"></span></button>
+                    <button class="btn btn-danger" title="Desactivar" type="button" onclick={{ "baja(".$proveedor->id.",'proveedores')" }}><span class="fas fa-times"></span></button>
                   </div>
                   {{ Form::close()}}
                   @else
                   {{ Form::open(['method' => 'POST', 'id' => 'alta', 'class' => 'form-horizontal'])}}
-                  <button class="btn btn-success" title="Activar" type="button" onclick={{ "alta(".$proveedor->id.",'proveedores')" }}><span class="fa fa-thumbs-o-up"></span></button>
+                  <button class="btn btn-success" title="Activar" type="button" onclick={{ "alta(".$proveedor->id.",'proveedores')" }}><span class="fas fa-thumbs-o-up"></span></button>
                   {{ Form::close()}}
                   @endif
                 </td>
@@ -88,12 +88,13 @@
           <!-- /.box -->
   </div>
 </div>
-<div class="modal fade" tabindex="-1" id="modal_nuevo" role="dialog" aria-labelledby="gridSystemModalLabel">
-  <div class="modal-dialog" role="document">
+<div class="modal fade" tabindex="-1" id="modal_nuevo" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="gridSystemModalLabel">Registrar Nuevo Proveedor</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
       </div>
       <div class="modal-body">
         <form id="form_nproveedor">
@@ -110,6 +111,8 @@
     </div>
   </div>
 </div>
+
+
 <div id="modal_aqui"></div>
 @endsection
 @section('scripts')

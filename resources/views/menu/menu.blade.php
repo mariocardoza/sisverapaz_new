@@ -83,6 +83,8 @@
       </ul>
     </li-->
  
+    @if(Auth()->user()->hasRole('admin'))
+    @include('menu.admin')
     @if(Auth()->user()->hasRole('uaci'))
     @include('menu.uaci')
     @endif

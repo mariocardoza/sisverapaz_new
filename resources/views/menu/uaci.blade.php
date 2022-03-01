@@ -11,11 +11,18 @@
     </a>
 </li>
 <li class="c-sidebar-nav-item">
+    <a href="{{ url('paacs') }}" class="c-sidebar-nav-link">
+      <img src="/images/dashboard.png" class="c-sidebar-nav-icon">
+      Plan anual de compras
+    </a>
+</li>
+<li class="c-sidebar-nav-item">
     <a href="{{ url('requisiciones') }}" class="c-sidebar-nav-link">
       <img src="/images/dashboard.png" class="c-sidebar-nav-icon">
       Requisiciones
     </a>
 </li>
+
 <li class="c-sidebar-nav-item">
     <a href="{{ url('ordencompras') }}" class="c-sidebar-nav-link">
       <img src="/images/dashboard.png" class="c-sidebar-nav-icon">
@@ -27,6 +34,32 @@
       <img src="/images/dashboard.png" class="c-sidebar-nav-icon">
       Proveedores
     </a>
+</li>
+<li class="c-sidebar-nav-item">
+    <a href="{{ url('materiales') }}" class="c-sidebar-nav-link">
+      <img src="/images/dashboard.png" class="c-sidebar-nav-icon">
+      Materiales e insumos
+    </a>
+</li>
+<li class="c-sidebar-nav-item c-sidebar-nav-dropdown">
+    <a href="javascript:void(0)" class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle">
+      <img src="/images/web.png" class="c-sidebar-nav-icon">
+      Otros
+    </a>
+    <ul class="c-sidebar-nav-dropdown-items">
+      <li class="c-sidebar-nav-item">
+        <a href="{{ url('paaccategorias') }}" class="c-sidebar-nav-link">
+          <img src="/images/blog.png" class="c-sidebar-nav-icon">
+          Categorías plan anual
+        </a>
+      </li>
+      <li class="c-sidebar-nav-item">
+        <a href="{{ url('giros') }}" class="c-sidebar-nav-link">
+          <img src="/images/testimonials.png" class="c-sidebar-nav-icon">
+          Giro de proveedores
+        </a>
+      </li>
+    </ul>
 </li>
 <!--li class="treeview {{Route::currentRouteName() == 'proyectos.index' ? 'active':(Route::currentRouteName()== 'proyectos.show' ? 'active':null)}}">
     <a href="{{ url('proyectos')}}">

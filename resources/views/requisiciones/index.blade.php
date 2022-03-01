@@ -4,7 +4,6 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <p></p>
       <div class="col-md-6">
       <select name="" id="select_anio" title="Ver requisiciones por año" class="chosen-select">
         <option selected value="0">Seleccione un año</option>
@@ -26,13 +25,12 @@
   <div class="row">
     <br>
     <br>
-
-              <div class="col-md-3">
-                <input type="checkbox" name="muchos" class="muchos"> Consolidar 2 o más requisiciones
-              </div>
-              <div class="col-md-2">
-                <button class="btn btn-primary combinar" style="display: none;" id="combinar">Consolidar</button>
-              </div>
+      <div class="col-md-3">
+        <input type="checkbox" name="muchos" class="muchos"> Consolidar 2 o más requisiciones
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-primary combinar" style="display: none;" id="combinar">Consolidar</button>
+      </div>
   </div>
   <div class="row">
     <div class="col-12">
@@ -147,7 +145,7 @@
   }
 
   function cargar_requisiciones(tipo){
-    //modal_cargando();
+    modal_cargando();
     $.ajax({
       url:'requisiciones/portipo/'+tipo,
       type:'get',

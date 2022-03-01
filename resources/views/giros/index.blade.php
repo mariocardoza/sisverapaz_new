@@ -9,20 +9,21 @@
       </ol>
 @endsection
 @section('content')
+<div class="container">
 <div class="row">
-      <div class="col-xs-12">
-          <div class="box">
+      <div class="col-md-12">
+          <div class="card">
             <p></p>
-            <div class="box-header">
+            <div class="card-header">
               <br>
-                <div class="btn-group pull-right">
+                <div class="btn-group float-right">
                     <a href="javascript:void(0)" id="btnmodalagregar" title="Agregar nuevo giro" class="btn btn-success"><span class="fa fa-plus-circle"></span></a>
                     <a href="{{ url('/giros?estado=1') }}" title="Giros activos" class="btn btn-primary">Activos</a>
                     <a href="{{ url('/giros?estado=2') }}" title="Giros desactivados" class="btn btn-primary">Papelera</a>
                 </div>
             </div>
             <!-- /.box-header -->
-            <div class="box-body table-responsive">
+            <div class="card-body table-responsive">
               <table class="table table-striped table-bordered table-hover" id="example2">
                 <thead>
                   <th><center>N°</center></th>
@@ -63,7 +64,7 @@
           <!-- /.box -->
       </div>
 </div>
-
+</div>
 @include("giros.modales")
 @endsection
 
